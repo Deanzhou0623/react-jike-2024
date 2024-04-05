@@ -1,10 +1,12 @@
 //axios 封装处理
 import axios from "axios";
+import { getToken, removeToken } from "./token"
+import router from "@/router"
 //1. 根域名配置
 //2. 超时时间
 //3. 请求拦截器/响应拦截器
 
-const requst = axios.create({
+const request = axios.create({
   baseURL: 'http://geek.itheima.net/v1_0',
   timeout: 5000
 })
@@ -48,4 +50,4 @@ request.interceptors.response.use((response) => {
 
 
 
-export { requst }
+export { request }
