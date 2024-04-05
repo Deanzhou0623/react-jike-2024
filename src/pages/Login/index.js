@@ -27,7 +27,7 @@ const Login = () => {
                 required: true,
                 message: 'Please input your phone number!',
               },
-              //2.check if it is valid phone number
+              //2.check if it isvalid phone number
               {
                 pattern: /^1[3-9]\d{9}/,
                 message: 'Please enter a valid phone number ',
